@@ -9,6 +9,10 @@ public class Arithmetic<T extends Number> {
         this.num2 = num2;
     }
 
+    //check for double first since bigger number with decimal
+    //float next for decimal
+    //long next for bigger integers
+    //int as a default (is that the proper terminology lol) or maybe as a last resort
     public Number add() {
         if (num1 instanceof Double || num2 instanceof Double) {
             return num1.doubleValue() + num2.doubleValue();

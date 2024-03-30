@@ -1,14 +1,11 @@
-import Arithmetic.Arithmetic;
+package Arithmetic;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main_Arith {
     static Number num1, num2;
-
     static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
-
         System.out.println("What num type do you want your num1 to be?");
         System.out.println("1 - int ; 2 - long ; 3 - float ; 4 - double");
         System.out.print("Enter choice: ");
@@ -31,9 +28,9 @@ public class Main {
         System.out.println("Divide: \t" + a.divide());
         System.out.println("Min: \t\t" + a.getMin());
         System.out.println("Max: \t\t" + a.getMax());
-
     }
 
+    //Just a helper method
     public static void gettingNum(int num, int choice1) {
         switch (choice1) {
             case 1 -> {
