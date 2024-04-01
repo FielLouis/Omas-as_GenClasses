@@ -33,26 +33,16 @@ public class Main_MM {
             switch (c) {
                 case 'a' -> {
                     key = sc.nextInt();
-                    val = sc.nextLine();
+                    val = sc.nextLine().substring(1);
                     myMap.put(key, val);
                 }
                 case 'g' -> {
                     key = sc.nextInt();
-                    if(myMap.get(key) == null) {
-                        System.out.println("Value: " + myMap.get(key));
-                    } else {
-                        //i think this only works if values is set to String XD
-                        System.out.println("Value: " + myMap.get(key).substring(1));
-                    }
+                    System.out.println("Value: " + myMap.get(key));
                 }
                 case 'r' -> {
                     key = sc.nextInt();
-                    if(myMap.get(key) == null) {
-                        System.out.println("Value: " + myMap.remove(key));
-                    } else {
-                        //i think this only works if values is set to String XD
-                        System.out.println("Removed " + myMap.remove(key).substring(1));
-                    }
+                    System.out.println("Removed " + myMap.remove(key));
                 }
                 case 'p' -> myMap.print();
                 default -> System.out.println("Error: input is not within choices!");

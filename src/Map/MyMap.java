@@ -50,7 +50,7 @@ public class MyMap<T, U> {
         System.out.println("\n========================================================================================");
         System.out.println("Keys - Values: ");
         for(int i = 0; i < keys.size(); i++) {
-            System.out.println(keys.get(i) + " -" + values.get(i));
+            System.out.println(keys.get(i) + " - " + values.get(i));
         }
         System.out.print("========================================================================================\n");
     }
